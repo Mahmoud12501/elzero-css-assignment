@@ -1,0 +1,55 @@
+
+.parent{
+    background-color: #eee;
+    width: 400px;
+    margin: 40px auto;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    transition: all .5s ;
+}
+
+
+.child{
+    background-color: #ddd;
+    padding: 20px 20px;
+    width: 300px;
+    margin: 10px auto;
+    transition: all .5s 1s linear;
+}
+
+.parent:hover{
+
+    margin-top: 30px;
+}
+
+.parent:hover .child{
+
+    margin-top: 30px;
+}
+
+
+.ass-2{
+    background-color: #eee !important;
+    color: black !important;
+    text-align: center !important;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px !important;
+    border: 1px solid #eee !important;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: -9999px;
+    position: relative;
+}    
+
+.ass-2::after{
+    content: "elzero";
+    color: black !important;
+    position: absolute;
+    text-indent: 0;
+    left:188px;
+    
+}

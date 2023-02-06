@@ -1,0 +1,39 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .flex div {
+    background-color: #f00;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+  }
+
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .float div {
+    background-color: #f00;
+    color: white;
+    float:left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+  }

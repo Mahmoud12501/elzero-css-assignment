@@ -1,0 +1,25 @@
+div{
+    padding: 10px;
+    border: 5px solid rgb(255, 98, 41);
+    /* text-align: center; */
+}
+
+div p{
+
+    text-align: center;
+    padding: inherit;
+    border: inherit;
+    background-color: rgb(150, 163, 175);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    /* font-style: italic; */
+    /* font-weight: 300; */
+}
+.to{
+    
+    font-style: normal;
+    color: blue;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+
+ }

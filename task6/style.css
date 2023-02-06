@@ -1,0 +1,33 @@
+.parent {
+    background-color: red;
+    padding: 10px;
+   
+  }
+  .parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    display: inline-block;
+    margin-left: 5%;
+    width: calc(80%/4);
+    float: left;
+  }
+
+.clear{
+
+    clear: both;
+}
+
+.img{
+    
+    /* display: inline-block; */
+    float: right;
+    /* text-align: center; */
+}
+
+
+  /* parent 100%
+     4 space 5%  20
+    80% avalabile
+  */

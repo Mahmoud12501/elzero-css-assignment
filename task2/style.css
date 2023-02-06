@@ -1,0 +1,40 @@
+/* div {
+    background-color: rgb(197, 209, 206);
+    display: inline-block  ;
+    padding: 50px;
+    border: 5px solid red;
+    outline: 5px solid black;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.tow{
+    border-color: blue green;
+    border-style: groove ;
+}
+
+.three{
+    border-color: red green blue yellow;
+    border-style: dashed ;
+} */
+
+.o ,.to, .t{
+    background-color: rgb(197, 209, 206);
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    outline: 5px solid rgb(197, 209, 206);
+    border-left: 7px solid red;
+}
+
+.to{
+    visibility: hidden;
+}
+.t{
+    border-color: aquamarine;
+
+}

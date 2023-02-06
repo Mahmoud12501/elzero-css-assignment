@@ -1,0 +1,112 @@
+.parent{
+  width: 800px;
+  background-color: #eee;
+  margin: 20px auto;
+}
+.parent div{
+
+  background-color: #ccc;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+ 
+  
+}
+.clear{
+  clear: both;
+}
+.row-one{
+  width: calc(100% - 30px);
+ 
+}
+.row-two{
+ width: calc((100% - 60px) / 3);
+}
+.row-three{
+  width: calc((100% - 45px) / 2);
+
+}
+.row-four{
+  width: calc((100% - 75px) / 4);
+  margin-bottom: 15px;
+
+}
+
+.one {
+  background-color: rebeccapurple;
+  width: 100px;
+  position: relative;
+}
+
+.one:hover{
+
+  background-color: #ccc;
+}
+a:visited{
+
+  text-decoration: none;
+  color: rgb(242, 147, 5);
+  border: 1px solid black;
+}
+
+div p{
+
+  background-color: #eee;
+  padding: 10px;
+  margin: 20px auto;
+  width: 400px;
+  font-family: sans-serif;
+  position: relative;
+  border-left:3px solid #e91e63 ;
+}
+
+div p::before{
+  content: attr(data-person);
+  position: absolute;
+  left:-110px;
+  background-color: #eee;
+  top:0;
+  padding: 10px 15px;
+}
+div p::after{
+  content: "";
+  padding: 0;
+  width: 0;
+  height: 0;
+  border:10px solid;
+  border-color:transparent #e91e63 transparent transparent  ;
+  position: absolute;
+  left: -21px;
+}
+
+.parent1{
+
+  background-color: #eee;
+  padding: 15px;
+  margin: 20px auto;
+  width: 400px;
+  font-family: sans-serif;
+  position: relative;
+  counter-increment: members_count ;
+}
+
+.parent1::before{
+  content:counter(members_count) ;
+  background-color: #f44336;
+  position: absolute;
+  left: -33px;
+  top: 0;
+  padding: 15px;
+  color: white;
+}
+.parent1::after{
+  content: "";
+  background-color: #f44336;
+  width:3px;
+  height:100%;
+  position: absolute;
+  right: 0;
+  top:0;
+
+}
