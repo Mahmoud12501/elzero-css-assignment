@@ -6,21 +6,26 @@
 
 
 .flex {
-    background-color: #eee;
-    width: 600px;
-    padding: 20px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+  background-color: #eee;
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction:column-reverse;
+  align-items:center;
+  justify-content:flex-end;
   }
   .flex div {
-    background-color: #f00;
+    background-color: rgb(93, 17, 17);
     color: white;
-    width: 25%;
+    width: 120px;
     text-align: center;
     padding: 20px;
+    margin-right: 5px;
+    justify-content: f;
+ 
   }
+/* ----------------------------------------------------------------- */
 
 .float {
     overflow: hidden;
@@ -30,10 +35,269 @@
     margin: 20px auto;
   }
   .float div {
-    background-color: #f00;
+    background-color: #185abc;
     color: white;
     float:left;
     width: 25%;
     text-align: center;
     padding: 20px;
   }
+.clear{
+  clear: both;
+}
+.center{
+
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+
+}
+
+.center div{
+  width: 50px;
+  height: 50px;
+  background-color: #185abc;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+.ass-1{
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin: 20px auto;
+  color: #ff5722;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* border-right: 5px solid #ff5722;
+  border-left: 5px solid #03a9f4; */
+  box-shadow: 6px 0px 0 #ff5722, -6px 0 0 #03a9f4;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+/* -------------------------------------------------------------------- */
+.ass-2{
+  width: 600px;
+  height: 300px;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-between;
+
+}
+/* ----------------------------------------------------------------------- */
+
+.ass-2 div{
+
+  width: calc(97% / 3);
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 10px
+}
+
+/* ------------------------------------------------------------------------- */
+.ass-3{
+  text-align: center;
+  color: white;
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  background-color: #eee;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+
+}
+
+.ass-3 div{
+  background-color: #607d8b;
+  padding: 10px;
+  width: calc(95%/3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* height: 50%; */
+}
+
+.ass-3 .one{
+  order: 6;
+  /* margin-top: 100px; */
+  align-self: flex-end;
+  
+}
+.ass-3 .two{
+  order: 5;
+  height: 50%;
+
+ 
+}
+
+.ass-3 .three{
+  order: 2;
+  
+
+}
+
+.ass-3 .four{
+  order: 3;
+  height: 50%;
+
+}
+.ass-3 .five{
+  order: 4;
+  height: 50%;
+}
+.ass-3 .six{
+  order: 1;
+  height: 50%;
+}
+/* ------------------ */
+
+.ass-3v2{
+  height: 300px;
+  width: 600px;
+  background-color: #ddd;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  
+}
+
+.ass-3v2 div{
+  background-color: #607d8b;
+  width: calc(95%/3);
+  height: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ass-3v2 .one{
+  order: 6;
+  height: 40px;
+  align-self: flex-end;
+ 
+  
+}
+.ass-3v2 .two{
+  order: 5;
+
+ 
+}
+
+.ass-3v2 .three{
+  order: 2;
+  height: 40px;
+
+}
+
+.ass-3v2 .four{
+  order: 3;
+  height: 50%;
+
+}
+.ass-3v2 .five{
+  order: 4;
+ 
+}
+.ass-3v2 .six{
+  order: 1;
+ 
+}
+
+/* ------------------------------------------------------------------------------------ */
+.ass-4{
+  height: 300px;
+  width: 600px;
+  background-color: #eee;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-flow:column ;
+  justify-content: space-between;
+}
+
+.ass-4 div{
+
+  background-color: #009688;
+  height: calc(90% /3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ 
+}
+
+.ass-4 .one ,.ass-4 .three{
+  width: 5%;
+  align-self: flex-end;
+}
+
+.ass-4 .two{
+  width: 60%;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.ass-5{
+  height: 300px;
+  width: 600px;
+  background-color: #eee;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.ass-5 div{
+  background-color: #009688;
+  width: calc(80%/4);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ass-5 .one{
+  background-color:#ff9800 ;
+  order: 2;
+
+}
+
+.ass-5 .three{
+  background-color:#795548 ;
+  order: 4;
+}
+
+.ass-5 .two{
+  background-color:#8bc34a ;
+  order: 3;
+}
+
+.ass-5 .four{
+  background-color:#673ab7 ;
+  order: 1;
+}
+.ass-5 .four ,.ass-5 .two{
+  align-self: flex-end;
+}
