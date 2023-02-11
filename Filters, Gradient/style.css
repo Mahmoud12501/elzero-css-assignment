@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.ass-1{
+    width: 600px;
+    /* height: 100px; */
+    background-color: #eee;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: 5px;
+    border-left: 5px solid rgb(244 67 54) ;
+    border-right: 5px solid rgb(103 58 183) ;
+}
+
+.ass-1::after{
+    content: "";
+    background: linear-gradient(
+        to right,
+        rgb(244 67 54) 20%,
+        rgb(33 150 243) 20%,
+        rgb(33 150 243) 40%,
+        rgb(76 175 80)40%,
+        rgb(76 175 80)60%,
+        rgb(234 31 100) 60%,
+        rgb(234 31 100)80%,
+        rgb(103 58 183)80%
+
+
+    );
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+  
+}
+.ass-1::first-letter{
+    color:rgb(244 67 54) ;
+}
+.ass-1::before{
+   content: "";
+    background: linear-gradient(
+        to right,
+        #f44336 20%,
+        rgb(33 150 243) 20%,
+        rgb(33 150 243) 40%,
+        rgb(76 175 80)40%,
+        rgb(76 175 80)60%,
+        rgb(234 31 100) 60%,
+        rgb(234 31 100)80%,
+        rgb(103 58 183)80%
+
+
+    );
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.point{
+  
+    width: 600px;
+    height: 250px;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ----------------------- */
+
+.ass-3{
+    width: 600px;
+    margin: 10px auto;
+    position: relative;
+    
+
+}
+
+.ass-3 input{
+
+    width: 600px;
+    margin-top: 10px;
+    height: 75px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: none;
+    caret-color: #f44336;
+}
+
+.ass-3 input:focus{
+    outline: none;
+}
+
+.ass-3::after{
+
+    content: "";
+    width: 600px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        to right,
+        #f44336 50%,
+        #009688 50%
+        );
+        
+} 
