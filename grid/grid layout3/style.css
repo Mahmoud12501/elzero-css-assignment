@@ -1,0 +1,163 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: ;
+}
+
+.grid{
+    width: 1000px;
+    height: 500px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    background-color: rgba(100, 6, 3, 0.33);
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "one one one one two two three three"
+    "four four five five five five three three "
+    "four four six six six six three three "
+    "seven seven eight eight nine nine ten ten" ;
+    gap: 10px;
+
+}
+
+.grid div{
+    background-color: #324f8d;
+    color: white;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid div:nth-of-type(1){
+    grid-area:one ;
+}
+.grid div:nth-of-type(2){
+    grid-area:two ;
+}
+.grid div:nth-of-type(3){
+    grid-area:three ;
+}
+.grid div:nth-of-type(4){
+    grid-area:four ;
+}
+.grid div:nth-of-type(5){
+    grid-area:five ;
+}
+
+.grid div:nth-of-type(6){
+    grid-area:six ;
+}
+.grid div:nth-of-type(7){
+    grid-area:seven ;
+}
+.grid div:nth-of-type(8){
+    grid-area:eight ;
+}
+.grid div:nth-of-type(9){
+    grid-area:nine ;
+}
+.grid div:nth-of-type(10){
+    grid-area:ten ;
+} */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #edf3f8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+
+.grid{
+    max-width:1440px ;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    grid-template-areas: 
+    "one one one one two two three three"
+    "four four five five five five three three "
+    "four four six six six six three three "
+    "seven seven eight eight nine nine ten ten" ;
+    gap: 10px;
+}
+
+
+
+.grid div{
+    background-color: white;
+    border-bottom: 5px solid #fe6030;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+header p{
+    opacity: 50%;
+}
+
+.grid div p:nth-of-type(1){
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.grid div p:nth-of-type(2){
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.3;
+    opacity: 80%;
+   
+}
+
+.grid .five,
+.grid .three,
+.grid  .eight{
+    background-color: black;
+    color: white;
+}
+
+
+.grid div:nth-of-type(1){
+    grid-area:one ;
+}
+.grid div:nth-of-type(2){
+    grid-area:two ;
+}
+.grid div:nth-of-type(3){
+    grid-area:three ;
+}
+.grid div:nth-of-type(4){
+    grid-area:four ;
+}
+.grid div:nth-of-type(5){
+    grid-area:five ;
+}
+
+.grid div:nth-of-type(6){
+    grid-area:six ;
+}
+.grid div:nth-of-type(7){
+    grid-area:seven ;
+}
+.grid div:nth-of-type(8){
+    grid-area:eight ;
+}
+.grid div:nth-of-type(9){
+    grid-area:nine ;
+}
+.grid div:nth-of-type(10){
+    grid-area:ten ;
+} 

@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10% 90%;
+    gap: 15px 15px;
+    counter-reset: el;
+  }
+
+  .grid div{
+    background-color: #607d8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid div::before{
+    counter-increment: el;
+    content: "Element "counter(el);
+    color: white;
+    
+  }
+
+
+  .grid1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-areas: 
+    "eight eight eight eight eight eight " 
+    "tow tow tow tow three three"
+    "four four five five five five"
+    "six six five five five five"
+    "seven seven five five five five"
+    "one one one one one one";
+    
+    gap: 15px;
+  }
+
+  .grid1 div{
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+.grid1 .eight{
+  grid-area:eight ;
+}
+.grid1 .two{
+  grid-area:tow ;
+}
+.grid1 .three{
+  grid-area:three ;
+}
+
+.grid1 .four{
+  grid-area:four ;
+}
+
+.grid1 .five{
+  grid-area:five ;
+}
+
+.grid1 .six{
+  grid-area:six ;
+}
+
+.grid1 .seven{
+  grid-area:seven ;
+}
+
+.grid1 .one{
+  grid-area:one ;
+}
+
+
+.grid3 {
+  background-color: #770c0c68;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.grid3 div{
+  background-color: #e91e63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
